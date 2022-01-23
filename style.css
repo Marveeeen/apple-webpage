@@ -16,10 +16,9 @@ body {
     font: 12px/18px "Opens Sans", sans-serif;
 }
 
-a {
-    text-decoration: none;
-    color: #08c;
-}
+
+
+/** HEADER **/
 
 header {
     background-image: url("images/hero.jpg");
@@ -58,9 +57,20 @@ nav div {
 
 }
 
+a {
+    text-decoration: none;
+    color: #08c;
+}
+
 nav a {
     color: inherit;
 }
+
+
+nav div:hover {
+    border-color: transparent;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
+  }
 
 form {
     display: flex;
@@ -118,3 +128,61 @@ h3 {
     margin: 0 auto auto auto;
 }
 
+/* Main */
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 2px;
+    height: 14.22vw;
+}
+
+.fives {
+    background-image: url("images/promo-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.fivec {
+    background-image: url("images/promo-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.mac {
+    background-image: url("images/promo-3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.supplier {
+    background-image: url("images/promo-4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+/** FOOTER **/
+
+footer {
+    padding: 30px;
+    display: flex;
+    font-size: 15px;
+    justify-content: space-around;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    display: inline;
+    border-right: 1px solid rgba(0 , 0, 0, 0.2);
+}
+
+ul li:last-child {
+    border:none;
+}
